@@ -1,0 +1,56 @@
+html {
+  font-size: 62.5%
+  height: 100%;
+}
+body {
+  height: 100%;
+  width:100%;
+}
+header {
+  height: 100px;
+  width: 100%;
+  position : fixed;
+  top : 0;
+  z-index : 10;
+  background-color: #1DA1F2;
+  font-size: 1.5rem;
+}
+header p {
+  color : #fff;
+}
+.header-left {
+  float: left;
+}
+.header-right {
+  float: right;
+  padding-right: 50px;
+}
+.header-middle {
+  float: left;
+}
+.container {
+  width: 100%;
+  margin-top : 120px;
+  min-height: 100%;
+}
+.content{
+  height: 100px;
+  width: 90%;
+  margin-left:20px;
+  font-size: 1.5rem;
+  border-style: solid; border-color: #a9a9a9;
+  margin:10px;
+}
+.contents-left {
+  float: left;
+}
+.contents-right {
+  float: right;
+}
+.footer{
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #1DA1F2;
+}
