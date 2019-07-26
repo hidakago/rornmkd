@@ -20,18 +20,33 @@ header p {
 }
 .header-left {
   float: left;
+  margin-left: 20px;
 }
 .header-right {
   float: right;
-  padding-right: 50px;
+  padding-right: 150px;
 }
 .header-middle {
   float: left;
+  margin-left: 20px;
+
+  animation-name:fade-in1;
+  animation-duration:4s; /*//アニメーション時間*/
+  animation-timing-function: ease-out; /*/アニメーションさせるイージング*/
+  animation-delay:1s; /*/アニメーション開始させる時間*/
+  animation-iteration-count:1; /*/繰り返し回数*/
+  animation-direction:normal; /*/往復処理をするかどうか*/
+  animation-fill-mode: forwards; /*/アニメーション後のスタイルをどうするか*/
+}
+@keyframes fade-in1 {
+  0% {opacity: 1}
+  100% {opacity: 0}
 }
 .container {
   width: 100%;
   margin-top : 120px;
   min-height: 100%;
+  margin-bottom : 60px;
 }
 .content{
   height: 100px;
@@ -53,4 +68,24 @@ header p {
   position: fixed;
   bottom: 0;
   background-color: #1DA1F2;
+}
+.error_msg {
+  margin-top : 120px;
+  margin-left:20px;
+  height: 100px;
+  width: 100%;
+}
+.new_content{
+  margin-left:20px;
+  font-size: 1.5rem;
+}
+.back_index {
+  margin-top:100px;
+  margin-left:20px;
+  font-size: 1.5rem;
+}
+.confirm_content{
+  margin-top : 120px;
+  margin-left:20px;
+  font-size: 1.5rem;
 }
